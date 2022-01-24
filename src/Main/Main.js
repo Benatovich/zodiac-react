@@ -4,7 +4,7 @@ import './Main.css'
 import { zodiac } from '../data.js'
 import ZodiacCard from '../ZodiacCard/ZodiacCard.js'
 
-export default function Main() {
+export default function Main(props) {
   return (
     <main style={{ backgroundImage: `url(${backgroundImg})` }}>
       {/* import the ZodiacCard component */}
