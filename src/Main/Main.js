@@ -1,7 +1,7 @@
 import React from 'react'
 import backgroundImg from '../background.png'
 import './Main.css'
-import { zodiac } from '../data.js'
+// import { zodiac } from '../data.js'
 import ZodiacCard from '../ZodiacCard/ZodiacCard.js'
 
 export default function Main(props) {
@@ -15,7 +15,7 @@ export default function Main(props) {
         <ZodiacCard key={item.name} {...item} /> */}
       {
         props.zodiacs.map((zodiac, i) => 
-          <ZodiacCard key={'${zodiac.name} + ${i}'} name={zodiac.name} dates={zodiac.dates} />)
+          <ZodiacCard key={`${zodiac.name} + ${i}`} name={zodiac.name} dates={zodiac.dates} />)
       }
     </main>
   )
